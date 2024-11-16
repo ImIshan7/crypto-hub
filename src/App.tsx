@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/Layout';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import CryptoList from './components/CryptoList';
+import News from './components/News';
+import Learn from './components/Learn';
+import Portfolio from './components/Portfolio';
+import Community from './components/Community';
+import Security from './components/Security';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout>
+        <Hero />
+        <Features />
+        <CryptoList />
+        <Portfolio />
+        <News />
+        <Learn />
+        <Community />
+        <Security />
+        <About />
+        <Contact />
+      </Layout>
   );
 }
 
